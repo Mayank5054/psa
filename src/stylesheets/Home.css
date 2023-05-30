@@ -1,0 +1,128 @@
+.crouler{
+    height:88vh;
+    width:100vw;
+    /* background:red; */
+ }
+ .image_container{
+    height:100%;
+    width:100%;
+    position: relative;
+    background: linear-gradient(to bottom,#EFBF39A5  ,#763A12A5),rgba(0,0,0,0.26);
+    
+ }
+ .blurer{
+    height:100%;
+    width:100%;
+    /* background:#000000a5; */
+    background:linear-gradient(to right,#000000C5 10%,transparent);
+    /* background: linear-gradient(to bottom,transparent 90%,#000000C5 ); */
+    /* background: linear-gradient(to bottom,#EFBF39B5  ,#763A12B5),rgba(0,0,0,0.26); */
+    position: absolute;
+ }
+ .info_div{
+    height:100%;
+    width:100%;
+    background:transparent;
+    flex-direction: column;
+ }
+ .house_div{
+    height:85%;
+    width:85%;
+    /* background:firebrick; */
+    flex-direction: column;
+ }
+.house_name{
+height:15%;
+width:100%;
+/* background:green; */
+
+}
+.house_name >p{
+    color:var(--primary-color);
+    font-size: 40px;
+   /* background:red; */
+   padding-left:5%;
+    font-family: "josefin_bold";
+  
+
+}
+.house_description{
+    min-width:20%;
+    max-width:100%;
+    height:20%;
+    /* background:yellow; */
+    display: flex;
+   
+    align-self: flex-start;
+    justify-content: flex-start;
+}
+.house_description >p{
+   padding-left:5%;
+   max-width:50%;
+   font-family: "josefin_light";
+   font-weight: 0;
+   font-size:20px;
+   color:white;
+   letter-spacing: 2px;
+   line-height: 1.2;
+
+}
+.arrow_div{
+   /* background:teal; */
+   height:7%;
+   width:100%;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
+.arrow_div > svg {
+   margin-left:5%;
+}
+ .image_slider{
+    height:15%;
+    width:85%;
+    /* background:green; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+ }
+ .image_slider1{
+   height:50%;
+   width:20%;
+   /* background:linear-gradient(to top,transparent,#000000a5); */
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.arrow_left,.arrow_right{
+   /* background:green; */
+   height:70%;
+   margin: 0% 2% 0% 2%;
+  
+}
+/* .arrow_right{
+   transform: rotate(180deg);
+
+} */
+.moving_circle{
+   /* background:green; */
+   height:80%;
+   width:auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-left: 2%;
+   padding-right: 2%;
+}
+.active_circle{
+   height:15px;
+   width:15px;
+   margin-left:5px;
+   border:1px solid #2E2E2E;
+   border-radius: 1000px;
+   /* background:var(--primary-color); */
+}
+.active_circle:nth-child(1){
+   border:none;
+   background: var(--primary-color);
+}

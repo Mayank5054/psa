@@ -1,0 +1,100 @@
+@font-face {
+    font-family: josefin;
+    src: url("../font/josefin_slab/JosefinSlab-Regular.ttf");
+}
+@font-face {
+    font-family: josefin_bold;
+    src: url("../font/josefin_slab/JosefinSlab-Bold.ttf");
+}
+@font-face {
+    font-family: josefin_light;
+    src: url("../font/josefin_slab/JosefinSlab-Light.ttf");
+}
+@font-face{
+    font-family:omega_3d;
+    src:url("../font/OmegaFlight3D-8M4n0.otf");
+}
+@font-face{
+    font-family:omega_3d_italic;
+    src:url("../font/OmegaFlight3DItalic-BWj4d.otf");
+}
+/* @font-face{
+    font-family:omega_bold_italic;
+    src:url("../font/OmegaFlightBoldItalic-rgrE7.otff");
+} */
+@font-face{
+    font-family:omega_bold;
+    src:url("../font/OmegaFlightBold-Yzyno.otf");
+}
+@font-face{
+    font-family:omega;
+    src:url("../font/OmegaFlight-BWjvx.otf");
+}
+@font-face{
+    font-family:omega_condensed_italic;
+    src:url("../font/OmegaFlightCondensedItalic-8M4vg.otf");
+}
+@font-face{
+    font-family:omega_condensed_italic;
+    src:url("../font/OmegaFlightCondensed-MVLDY.otf");
+}
+@font-face{
+    font-family:omega_expanded_italic;
+    src:url("../font/OmegaFlightExpandedItalic-Yzy2O.otf");
+}
+@font-face{
+    font-family:omega_expanded;
+    src:url("../font/OmegaFlightExpanded-K7Jx7.otf");
+}
+@font-face{
+    font-family:omega_gradient;
+    src:url("../font/OmegaFlightGradient-2OW8v.otf");
+}
+@font-face{
+    font-family:omega_gradient_italic;
+    src:url("../font/OmegaFlightGradientItalic-rgrny.otf");
+}
+@font-face{
+    font-family:omega_halftone_italic;
+    src:url("../font/OmegaFlightHalftoneItalic-MVLDJ.otf");
+}
+@font-face{
+    font-family:omega_halftone;
+    src:url("../font/OmegaFlightHalftone-vmR8A.otf");
+}
+@font-face{
+    font-family:omega_italic;
+    src:url("../font/OmegaFlightItalic-lg83d.otf");
+}
+@font-face{
+    font-family:omega_leftitalic;
+    src:url("../font/OmegaFlightLeftalic-K7Jxy.otf");
+}
+@font-face{
+    font-family:omega_outlineitalic;
+    src:url("../font/OmegaFlightOutlineItalic-2OW8d.otf");
+}
+@font-face{
+    font-family:omega_outline;
+    src:url("../font/OmegaFlightOutline-nRrpg.otf");
+}
+@font-face{
+    font-family:omega_semiitalic;
+    src:url("../font/OmegaFlightSemiItalic-1G2Og.otf");
+}
+@font-face{
+    font-family:omega_semileftitalic;
+    src:url("../font/OmegaFlightSemiLeftalic-nRr0P.otf");
+}
+@font-face{
+    font-family:omega_super_italic;
+    src:url("../font/OmegaFlightSuperItalic-RpqOW.otf");
+}
+@font-face{
+    font-family:omega_title;
+    src:url("../font/OmegaFlightTitle-1G2B2.otf");
+}
+@font-face{
+    font-family:omega_title_italic;
+    src:url("../font/OmegaFlightTitleItalic-RpqRA.otf");
+}

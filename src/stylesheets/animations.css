@@ -1,0 +1,48 @@
+@keyframes opac {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+@keyframes scaler {
+    0%{
+        scale:1
+    }
+    50%{
+        scale:0.9
+    }
+    100%{
+        scale:1
+    }
+    
+}
+@keyframes moveleft {
+    0%{
+        opacity: 1;
+        margin-left: 0%;
+    }
+    50%{
+        opacity: 0;
+        margin-left: -100%;
+    }
+    100%{
+        opacity: 1;
+        margin-left: 0%;
+    }
+}
+@keyframes services_active {
+    
+    
+}
+.moveLeft{
+   animation-name: moveleft;
+   animation-duration: 1s;
+}
+
+.opac_anima{
+    animation-name: opac;
+    animation-duration: 1s;
+ }
