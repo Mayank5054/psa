@@ -4,40 +4,18 @@ import arrow_right from "../graphics/slider_right.svg";
 import arrow_left from "../graphics/slider_left.svg";
 import { motion, transform } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Load from "./Load";
 function ImageCrouler() {
     var [load,setLoad]=useState(true);
    
       useEffect(()=>{
-        if(navigator.onLine){
-            window.onload=()=>{
-                console.log("content loaded ")
-                setLoad(()=>(false));
-            }
-            if(document.readyState=="complete"){
-                setLoad(false);
-            }
-        }
-        else{
-            console.log("internet was not available");
-        }
-
-       
-            
-        // setInterval((e)=>{
-        //     if(document.readyState=="complete"){setLoad(false);clearInterval(this);}
-        //     else{setLoad(true);}
-        //     console.log(document.readyState);
-        // },1000)
+        setInterval(()=>{
+            handleCrouler("right");
+               },5000);
         
-      })
-    //   document.onreadystatechange=(e)=>{
-    //     console.log(document.readyState);
-    //     if(document.readyState=="compelete"){
-    //     setLoad(false);}
-      
-    // }
-    
+      },[])
+   
     var image = [10, 20, 30, 40];
     var image_src = ["https://img.freepik.com/free-photo/blue-house-with-blue-roof-sky-background_1340-25953.jpg",
         "https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bHV4dXJ5JTIwaG91c2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
@@ -56,7 +34,7 @@ function ImageCrouler() {
         },
         exit: {
             x: "-100%",
-            opacity: 0,
+            // opacity: 0,
             transition: {
                 duration: 1,
                 ease: "easeInOut"
@@ -65,15 +43,13 @@ function ImageCrouler() {
     }
 
     useEffect(() => {
-        var house_name=document.querySelector(".house_name > p");
-        var house_description=document.getElementById("house_description");
-        var home_page_image=document.getElementById("home_path_im");
+        // var house_name=document.querySelector(".house_name > p");
+        // var house_description=document.getElementById("house_description");
+        // var home_page_image=document.getElementById("home_path_im");
         // house_name.innerHTML=house_names[0];
         // home_page_image.setAttribute("src",image_src[0]);
         
-        //     setInterval(()=>{
-        //  handleCrouler("right");
-        //     },3000);
+         
             
 
     });
@@ -85,12 +61,13 @@ function ImageCrouler() {
         var home_page_image = document.getElementById("home_page_image");
         var ref = document.getElementById("arrow_left");
         var actives = document.getElementsByClassName("active_circle");
-        var house_name = document.querySelector(".house_name > p");
+        var house_name = document.querySelector(".house_name > a > p");
         var h_name = document.getElementById("house_name");
         var house_description = document.getElementById("house_description");
         var arrow_big = document.getElementById("arrow_big_div");
 
-        home_page_image.style.opacity=0;
+        if(home_page_image!=null){
+        home_page_image.style.opacity=0;}
         // set loading bar to true
          
 
@@ -148,7 +125,7 @@ function ImageCrouler() {
         // load the image
         home_page_image.setAttribute("src", image_src[current_active]);
         home_page_image.onload=()=>{
-
+             
             home_page_image.style.animationName="opac";
             home_page_image.style.animationDuration="1.5s";
             // arrow left and right animation over 
@@ -190,16 +167,24 @@ function ImageCrouler() {
         <img src={image_src[0]} style={{height:0,width:0,display:"none"}}></img>
         <img src={image_src[1]} style={{height:0,width:0,display:"none"}}></img>
         <img src={image_src[2]} style={{height:0,width:0,display:"none"}}></img>
-        { (load==true) ? <Load></Load>:
+      
         <motion.div className="crouler"
-        variants={info_animation}
-        initial="initial"
-        animate="animate"
-        exit="exit"
-        style={{
+        initial={{x:"100%",opacity:0}}
+        animate={{x:"0%",opacity:1}}
+        transition={{duration:1,ease:"easeInOut"}}
+        exit={{x:"-100%"}}
+        // variants={info_animation}
+        // initial="initial"
+        // animate="animate"
+        // exit="exit"
+        // style={{
             
-        }}
+        // }}
         > 
+        <div style={{height:"100%",width:"100%",background:"white"}}>
+
+        
+
                         <div className="image_container DF AI JC">
                             <motion.img id="home_page_image" 
                             animate={{
@@ -222,8 +207,11 @@ function ImageCrouler() {
                                             animate="animate"
                                             id="house_name"
                                             className="house_name">
-                                            <motion.p
+                                                <Link to="/">
+                                                <motion.p
                                             >{house_names[0]}</motion.p>
+                                                </Link>
+                                           
                                         </motion.div>
                                         <motion.div
                                             variants={info_animation}
@@ -264,10 +252,11 @@ function ImageCrouler() {
                                     </div>
                                 </div>
                             </div>
+                        </div>   
                         </div>
             
         </motion.div>
-                                            }
+                                         
                                             </>
     );
 }

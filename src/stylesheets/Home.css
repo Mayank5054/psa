@@ -1,6 +1,7 @@
 .crouler{
     height:88vh;
     width:100vw;
+    overflow:hidden;
     /* background:red; */
  }
  .image_container{
@@ -37,12 +38,13 @@ width:100%;
 /* background:green; */
 
 }
-.house_name >p{
+.house_name > a > p{
     color:var(--primary-color);
     font-size: 40px;
    /* background:red; */
    padding-left:5%;
     font-family: "josefin_bold";
+    text-decoration: none;
   
 
 }

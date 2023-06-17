@@ -10,10 +10,14 @@ import { Routes, Route } from "react-router-dom";
 import Navigation from './component/Navigation';
 import About from './component/about';
 import Home from './component/Home';
+import Contact from './component/Contact';
+import Projects from './component/Projects';
+import Rose from './component/Rose';
 function domit() {
   var position = document.getElementById("slider_movable");
   console.log(position);
 }
+
 function App() {
 
   var location = useLocation();
@@ -25,15 +29,15 @@ function App() {
         <Navigation></Navigation>
         <AnimatePresence mode='wait'>
           <Routes key={location.pathname} location={location}>
-            <Route index path="/home" element={<Home></Home>}></Route>
+            <Route index path="/" element={<Home></Home>}></Route>
             <Route path="/about" element={<About></About>}></Route>
-            <Route path="/project" element={<About></About>}></Route>
+            <Route path="/project" element={<Projects></Projects>}></Route>
+            <Route path="/project/rose" element={<Rose></Rose>}></Route>
             <Route path="/service" element={<About></About>}></Route>
+            <Route path="/contact" element={<Contact></Contact>}></Route>
           </Routes>
         </AnimatePresence>
-        <div className='footer_div'>
-
-        </div>
+        
       </div>
     </>
   );

@@ -1,0 +1,227 @@
+.contact_page_div{
+    height:35vh;
+    width: 100%;
+    background:url("../images/architecture-building-design-fantasy-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: 0% 50%;
+   
+}
+
+.image_wrapper1{
+    height:100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+ 
+    background: linear-gradient(to bottom,#EFBF3930  ,#763A1230);
+}
+
+.image_wrapper1 > p{
+    font-size:50px;
+    color:var(--primary-color);
+    font-family: "josefin_bold";
+    /* background:red; */
+    padding-left:10%;
+}
+
+.contact_detail_div{
+    height:60vh;
+    width:100%;
+    /* background:red; */
+}
+.contact_deatil_div_left{
+    height:100%;
+    width:70%;
+    /* background: darkblue; */
+}
+.contact_deatil_div_right{
+    height:100%;
+    width:30%;
+    /* background: yellow; */
+}
+.contact_us_final{
+    height: 125%;
+    width:90%;
+    background:white;
+    margin-top:-12%;
+  z-index:1;
+    color:white;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px #434343;
+}
+.contact_us_final > p{
+    font-size: 25px;
+    color:#434343;
+    /* background:red; */
+    /* margin:0; */
+    margin-top:10%;
+    padding-left:10%;
+}
+.contact_deatil_div_right b {
+    font-size:30px;
+    font-family: "josefin_bold";
+    color:var(--primary-color);
+}
+.div_spacer{
+    height:3px;
+    width:25%;
+    margin-left:11%;
+    margin-top:3%;
+    background:var(--primary-color);
+}
+.contact_us_final > .contact_description{
+    font-size:16px;
+    margin-top:10%;
+    /* background:yellow; */
+    max-width:80%;
+    letter-spacing: 1px;
+    line-height: 1.05;
+}
+.details_div{
+    height:52%;
+    /* background:hotpink; */
+}
+
+.contact_us_final  .office_address{
+    /* background:red; */
+    align-items: center;
+    justify-content:flex-start;
+    padding-left:10%;
+    margin-top:7%;
+    padding-bottom:1%;
+    margin-bottom:0;
+}
+.contact_us_final  .office_mail{
+    /* background:red; */
+    align-items: center;
+    justify-content:flex-start;
+    padding-left:10%;
+    margin-top:9%;
+    padding-bottom:1%;
+    margin-bottom:0;
+}
+.contact_us_final  .office_phone{
+    /* background:red; */
+    align-items: center;
+    justify-content:flex-start;
+    padding-left:10%;
+    margin-top:9%;
+    padding-bottom:1%;
+    margin-bottom:0;
+}
+.contact_us_final  span{
+    color:#434343;
+    font-size:24px;
+    padding-left:5%;
+}
+.contact_us_final a{
+    /* background:green; */
+    /* margin:0;
+    margin-top:15%; */
+    padding-left:20%;
+    text-decoration: none;
+    color:#5A5A5A;
+    font-size:16px;
+
+}
+#mail{
+    font-size: 18px;
+}
+#phone{
+    font-size: 18px;
+}
+.contact_us_final > .social_media{
+    /* background:red; */
+    margin:0;
+    height:initial;
+    height:10%;
+    width:80%;
+    padding-left:10%;
+    padding-bottom:2%;
+    
+}
+.social_media a{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background:red; */
+}
+.social_media  img{
+    /* height:5%;
+    width:5%; */
+    height:60%;
+    
+}
+/* .map_div{
+    height:55vh;
+    width:100%;
+    background:hotpink;
+    z-index:-1;
+    position:absolute;
+} */
+.contact_detail_div_left1{
+    height:80%;
+    width:60%;
+    /* background:green; */
+    flex-direction: column;
+}
+.contact_detail_div_left1 p {
+/* background:red; */
+font-size:20px;
+max-width:80%;
+margin-top:2%;
+}
+.contact_detail_div_left1 p:nth-child(1){
+    font-size:30px;
+    color:var(--primary-color);
+    font-family: "josefin_bold";
+}
+
+#link_left_contact{
+     margin-top:4%;
+    /* margin:0px; */
+    /* background:red; */
+    padding:0px;
+    width:35%;
+    height:13%;
+}
+.contact_left_button{
+    width:100%;
+    height:100%;
+    padding:4% 0% 4% 0%;
+    font-size: 22px;
+    border:2px solid var(--primary-color);
+    background:none;
+    font-family: "josefin_semi";
+    color:var(--primary-color);
+}
+.map_and_developer_div{
+    height:100vh;
+    width:100%;
+    /* background:red; */
+    z-index:-1;
+    /* background: var(--primary-color); */
+    position:relative;
+    flex-direction: column;
+    position:absolute;
+}
+.map_div{
+    height:55vh;
+    width:100%;
+    background:rebeccapurple;
+    z-index:1;
+    /* position:absolute; */
+    /* top:0%; */
+}
+.developer_footer1{
+    height:7vh;
+    width:100%;
+    /* background:green; */
+    /* z-index:-1; */
+}
+

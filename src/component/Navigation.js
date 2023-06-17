@@ -50,12 +50,12 @@ function Navigation(){
                   onTap={(e)=>{active_option(e.target.id);}}
                   ><Link 
                   style={{color:"var(--primary-color)",fontFamily:"josefin_bold"}}
-                  to="/home" className="menu_a" id="menu_home">Home</Link>
+                  to="/" className="menu_a" id="menu_home">Home</Link>
                   </motion.p>
                   <motion.p
                     whileHover={{ y: -7 }}
                     onTap={(e)=>{active_option(e.target.id);}}
-                    className='menu_p'><Link to="/service" className="menu_a" id="menu_service">Service</Link>
+                    className='menu_p'><a href="/#service_div" className="menu_a" id="menu_service">Service</a>
                   </motion.p>
                   <motion.p
                     whileHover={{ y: -7 }}

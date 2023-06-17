@@ -33,8 +33,20 @@
         margin-left: 0%;
     }
 }
-@keyframes services_active {
-    
+@keyframes mover {
+    0%{
+        /* margin-left:-30%; */
+        width:0%;
+        /* opacity:1; */
+    }
+    50%{
+        width:150%;
+        /* margin-left:110%; */
+    }
+    100%{
+        width:0%;
+        /* opacity:0; */
+    }
     
 }
 .moveLeft{
@@ -46,3 +58,19 @@
     animation-name: opac;
     animation-duration: 1s;
  }
+ .projects_menu_animated{
+    color:var(--primary-color) !important;
+    border-bottom: 5px solid var(--primary-color);
+    font-family: "josefin_bold";
+    /* font-size:22px !important; */
+    margin-top:-1%;
+    transition: 0.5s;
+ }
+
+
+ .load_opac{
+    animation-name: "opac";
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+ }
+ 

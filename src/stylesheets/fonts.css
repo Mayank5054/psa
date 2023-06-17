@@ -7,6 +7,10 @@
     src: url("../font/josefin_slab/JosefinSlab-Bold.ttf");
 }
 @font-face {
+    font-family: josefin_semi;
+    src: url("../font/josefin_slab/JosefinSlab-Medium.ttf");
+}
+@font-face {
     font-family: josefin_light;
     src: url("../font/josefin_slab/JosefinSlab-Light.ttf");
 }

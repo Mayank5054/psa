@@ -3,7 +3,12 @@
 @import url("./stylesheets/fonts.css");
 @import url("./stylesheets/Home.css");
 @import url("./stylesheets/Services.css");
-
+@import url("./stylesheets/Vision.css");
+@import url("./stylesheets/Projects.css");
+@import url("./stylesheets/Project_data.css");
+@import url("./stylesheets/footer.css");
+@import url("./stylesheets/contact.css");
+@import url("./stylesheets/load.css");
 :root{
   --primary-color:#EFBF39;
   --primary-color2:#763A12;
@@ -11,12 +16,15 @@
   --PSA_gray:434343;
 }
 *{
-  font-family:"josefin"
+  font-family:"josefin";
+  scroll-behavior: smooth;
 }
 body{
   overflow-x:hidden;
 }
-
+a{
+  text-decoration: none;
+}
 .cls-1{
   transition:2;
   stroke:#434343;stroke-width: 3px;}
@@ -24,4 +32,7 @@ body{
 #Layer_1{
 height:23%;
 }
-.svg-arrow{fill:none;stroke:var(--primary-color);stroke-miterlimit:10;stroke-width:2px;}
+.svg-arrow{stroke-miterlimit:10;stroke-width:2px;}
+
+
+.logo_cls{fill:none;stroke:var(--primary-color);stroke-miterlimit:10;stroke-width: 5;}

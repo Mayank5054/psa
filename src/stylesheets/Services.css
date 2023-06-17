@@ -6,7 +6,7 @@
 }
 .services_container{
     height:90%;
-    width:90%;
+    width:95%;
     /* background:Red; */
     flex-direction: column;
    
@@ -17,12 +17,17 @@
     /* background:green; */
     display: flex;
     align-items: center;
+    
 }
 .services_title > p{
     font-family: "josefin_bold";
     color:var(--primary-color);
-    font-size: 42px;
+    /* color:#DBDBDB; */
+    font-size: 60px; /*45*/
     /* background:blue; */
+    padding-left:23%; /*8*/
+    
+    transform: translate(0%,100%);
 }
 .services_slider{
     height: 90%;
@@ -30,10 +35,10 @@
     /* background:teal; */
 }
 .services_slider1{
-    height:90%;
+    height:85%;
     width:55%;
     /* background:blue; */
-    box-shadow: 0px 5px 10px black;
+    box-shadow: 0px 0px 10px black;
 }
 
 .services_slider2{
@@ -80,3 +85,4 @@
     height:100%;
     width:100%;
 }
+
