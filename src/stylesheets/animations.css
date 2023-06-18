@@ -7,12 +7,21 @@
     }
     
 }
+@keyframes opac_reverse {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
 @keyframes scaler {
     0%{
         scale:1
     }
     50%{
-        scale:0.9
+        scale:0.5
     }
     100%{
         scale:1
@@ -22,15 +31,34 @@
 @keyframes moveleft {
     0%{
         opacity: 1;
-        margin-left: 0%;
+        margin-top: 0%;
     }
-    50%{
+   
+    100%{
         opacity: 0;
-        margin-left: -100%;
+        margin-top: -12%;
     }
+}
+@keyframes moveleft_desc {
+    0%{
+        opacity: 1;
+        margin-top: 0%;
+    }
+   
+    100%{
+        opacity: 0;
+        margin-top: -5%;
+    }
+}
+@keyframes moveBottom {
+    0%{
+        opacity: 0;
+        margin-top: 12%;
+    }
+   
     100%{
         opacity: 1;
-        margin-left: 0%;
+        margin-top: 0%;
     }
 }
 @keyframes mover {
@@ -51,12 +79,24 @@
 }
 .moveLeft{
    animation-name: moveleft;
-   animation-duration: 1s;
+   animation-duration: 0.6s;
 }
-
+.moveLeft1{
+    animation-name: moveleft_desc;
+    animation-duration: 0.6s;
+ }
+.moveBottom{
+    animation-name: moveBottom;
+    animation-duration: 0.6s;
+ }
+ 
 .opac_anima{
     animation-name: opac;
     animation-duration: 1s;
+ }
+ .opac_anima1{
+    animation-name: opac;
+    animation-duration: 0.6s;
  }
  .projects_menu_animated{
     color:var(--primary-color) !important;

@@ -12,17 +12,32 @@ function Fott(){
          <motion.div className="footer_div"
          initial={{x:"100%",opacity:0}}
          animate={{x:"0%",opacity:1}}
-         transition={{duration:1,ease:"easeInOut"}}
-         exit={{x:"-100%"}}
+         transition={{duration:0.75,ease:"linear"}}
+         exit={{
+            x:"-100%",
+            transition:{duration:0.5,ease:"linear"}
+        }}
          >
-        <div className="footer_div1">
+        <motion.div className="footer_div1"
+        viewport={{ once: true }}
+                 initial={{y:"402%"}}
+                 whileInView={{
+                     y: 0,
+                     transition: {
+                         duration: 0.5,
+                         ease: "linear",
+                         // when:"beforeChildren"
+                     }
+ 
+                 }}
+        >
             <div className="footer_contact DF AI JC">
                 <p>For Any Query Feel Free To Get In Touch</p>
                 <Link to="/contact" id="footer_link">
                 <motion.button
               onHoverStart={e=>{e.target.style.background="var(--primary-color)";e.target.style.color="white";}}
               onHoverEnd={e=>{e.target.style.background="none";e.target.style.color="var(--primary-color)";}}
-              whileHover={{scale:1.05}}
+              whileHover={{scale:1.02}}
                 className='footer_button'>
                 Contact Us
               </motion.button>
@@ -66,7 +81,7 @@ function Fott(){
                
             </div>
             
-        </div>
+        </motion.div>
         </motion.div>
         </>
     );

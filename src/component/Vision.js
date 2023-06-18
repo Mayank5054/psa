@@ -1,7 +1,7 @@
 import im from "../images/house02.png";
 import Arrow from "./Arrow";
 import polygon from "../graphics/polygon.svg";
-import { motion } from "framer-motion";
+import { motion,useMotionValue,animate } from "framer-motion";
 import { useEffect,useState } from "react";
 function Vision() {
     var  [intersect,setInter]=useState(true);
@@ -29,7 +29,7 @@ useEffect(()=>{
         console.log("inside observer");
         console.log(e);
         e.forEach((e)=>{
-          if(e.intersectionRatio > 0.20){
+          if(e.intersectionRatio > 0.90){
             setInter(false);
             console.log(e);
             self.unobserve(e.target);
@@ -48,24 +48,59 @@ useEffect(()=>{
 
 
   },[])
-
+  var [count,setCount]=useState(0);
+  var [state,setState]=useState(0);
+  var x=useMotionValue(0);
+  var y=useMotionValue(0);
+        function callCount(){
+            
+                animate(x, 73, {
+                    duration:1.5,
+                    ease: "linear",
+                    onUpdate(latest) {
+                        console.log('New value:', latest);
+                        // var count=document.getElementById("count_pro1");
+                        // count.innerHTML=latest.toFixed(0);
+                        setCount(latest.toFixed(0));
+                    }
+                })
+               
+                animate(y, 4, {
+                    duration:0.5,
+                    ease: "linear",
+                    onUpdate(latest) {
+                        console.log('New value:', latest);
+                        // var count=document.getElementById("count_pro1");
+                        // count.innerHTML=latest.toFixed(0);
+                        setState(latest.toFixed(0));
+                    }
+                })
+        }
+            
+              
+      
+          
+  
     return (
         <>
             <motion.div className="vision_div"
            initial={{x:"100%",opacity:0}}
             animate={{x:"0%",opacity:1}}
-            transition={{duration:1,ease:"easeInOut"}}
+        // initial={{opacity:0,scale:0}}
+        // whileInView={{opacity:1,scale:1}}
+            transition={{duration:0.5,ease:"linear"}}
             exit={{x:"-100%"}}
             style={{
                 overflow:"hidden"
             }}
             >
-                {intersect==true ? <p>not intersecting</p> :
+                {/* {intersect==true ? <p>not intersecting</p> : */}
                 <motion.div 
                 className="vision_div1" id="vision_div1"
-                initial={{y:"100%",opacity:0}}
-             animate={{y:"0%",opacity:1}}
-             transition={{duration:2,ease:"easeIn",when:"beforeChildren"}}
+                initial={{y:"10%",opacity:0}}
+             whileInView={{y:"0%",opacity:1,do:callCount()}}
+             viewport={{once:true}}
+             transition={{duration:0.73,ease:"easeIn",when:"beforeChildren"}}
                 >
                     <div className="vision_img_div" id="vision_image_div">
                         <img src={im}></img>
@@ -106,9 +141,8 @@ useEffect(()=>{
                                 >
                                     <img src={polygon}></img>
                                     <motion.p
-                                    
                                     >Project 's</motion.p>
-                                    <p className="data">70</p>
+                                    <p className="data">{count}</p>
                                 </motion.div>
                                 <motion.div className="state_service state_common"
                                  variants={springy}
@@ -127,7 +161,7 @@ useEffect(()=>{
                                 >
                                     <img src={polygon}></img>
                                     <p>In States</p>
-                                    <p className="data">04</p>
+                                    <p className="data">0{state}</p>
                                 </motion.div>
                                 <motion.div className="state_cost state_common"
                                 variants={springy}
@@ -146,7 +180,7 @@ useEffect(()=>{
                         </div>
                     </div>
                 </motion.div>
-}
+{/* } */}
             </motion.div>
         </>
     );

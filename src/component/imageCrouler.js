@@ -65,9 +65,11 @@ function ImageCrouler() {
         var h_name = document.getElementById("house_name");
         var house_description = document.getElementById("house_description");
         var arrow_big = document.getElementById("arrow_big_div");
+        var house_div=document.getElementById("house_div");
 
         if(home_page_image!=null){
-        home_page_image.style.opacity=0;}
+        // home_page_image.style.opacity=0;
+    }
         // set loading bar to true
          
 
@@ -118,16 +120,24 @@ function ImageCrouler() {
 
         // house name and descrp animation class add
         if(h_name){
+        h_name.classList.remove("moveBottom");
         h_name.classList.add("moveLeft");
-        house_description.classList.add("moveLeft");
-
+        
+    
+            house_description.classList.remove("moveBottom");
+            house_description.style.opacity=0;
+            house_description.style.transition="0.6s";
+            // house_description.classList.add("moveLeft1");
+        
 
         // load the image
+      
         home_page_image.setAttribute("src", image_src[current_active]);
         home_page_image.onload=()=>{
-             
-            home_page_image.style.animationName="opac";
-            home_page_image.style.animationDuration="1.5s";
+
+            home_page_image.style.animationName="moveleft";
+            home_page_image.style.animationDuration="1000";
+
             // arrow left and right animation over 
             setTimeout(() => {
                
@@ -136,25 +146,34 @@ function ImageCrouler() {
               
            }, 500)
            
+           setTimeout(()=>{
+                home_page_image.style.animationName="";
+                
+               },1000)
            // arrow big opacity animation start and name and description animation over 
            setTimeout(() => {
-               // arrow_big.classList.add("opac_anima");
                
                h_name.classList.remove("moveLeft");
-               house_description.classList.remove("moveLeft");
-               
-              
-           }, 1200)
+               h_name.classList.add("moveBottom");
+        house_description.style.opacity=1;
+            house_description.style.transition="0.6s";
+           }, 600)
+
            
-           setTimeout(()=>{
-            home_page_image.style.animationName="";
-           },1500)
+
+           
+
+           
+        //    setTimeout(()=>{
+        //     home_page_image.style.animationName="opac_reverse";
+        //     home_page_image.style.animationDuration="1s";
+        //    },1000)
            // arrow big animation remove
            // setTimeout(() => {
            //     arrow_big.classList.remove("opac_anima");
            //     arrow_big.style.opacity = 1;
            // }, 2000)
-           home_page_image.style.opacity=1;
+        //    home_page_image.style.opacity=1;
                    }
         }
 
@@ -169,10 +188,12 @@ function ImageCrouler() {
         <img src={image_src[2]} style={{height:0,width:0,display:"none"}}></img>
       
         <motion.div className="crouler"
-        initial={{x:"100%",opacity:0}}
-        animate={{x:"0%",opacity:1}}
-        transition={{duration:1,ease:"easeInOut"}}
-        exit={{x:"-100%"}}
+        // initial={{x:"100%",opacity:0}}
+        // animate={{x:"0%",opacity:1}}
+        // transition={{duration:0.75,ease:"linear"}}
+        // exit={{x:"-100%",
+        // transition:{duration:0.5,ease:"easeIn"}
+    // }}
         // variants={info_animation}
         // initial="initial"
         // animate="animate"
@@ -200,7 +221,7 @@ function ImageCrouler() {
                             </motion.img>
                             <div className="blurer">
                                 <div className="info_div DF AI JC">
-                                    <div className="house_div DF AI JC">
+                                    <div className="house_div DF AI JC" id="house_div">
                                         <motion.div
                                             variants={info_animation}
                                             initial='initial'
@@ -218,7 +239,8 @@ function ImageCrouler() {
                                             initial='initial'
                                             animate="animate"
                                             id="house_description"
-                                            className="house_description">
+                                            className="house_description"
+                                            >
                                             <p>The he holy name of lotus flower .The Rossophisticated house made on the theme of lotus and on the holy name of lotus flower .</p>
                                         </motion.div>
                                         {/* <div className="arrow_div" id="arrow_big_div">

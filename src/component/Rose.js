@@ -195,8 +195,16 @@ handleCrouler();
                             <img src={image_src[0]} id="image_project_data"></img>
                             <div className="blurer_Image_Slider1">
                                 <div className="image_Description">
-                                    <p>The Rouse</p>
-                                    <p>House</p>
+                                    <motion.p
+                                    initial={{x:"-100%",scale:0}}
+                                    animate={{x:"0%",scale:1}}
+                                    transition={{duration:0.75,delay:1,type:"spring",stiffness:500}}
+                                    >The Rouse</motion.p>
+                                    <motion.p
+                                    initial={{x:"-100%",scale:0}}
+                                    animate={{x:"0%",scale:1}}
+                                    transition={{duration:0.75,delay:1,type:"spring",stiffness:500}}
+                                    >House</motion.p>
                                 </div>
                                 <div className="counter">
                                     <p id="current_active">01</p>
@@ -210,7 +218,12 @@ handleCrouler();
                         </div>
                     </div>
                 
-                <div className="Video_div DF AI JC">
+                <motion.div className="Video_div DF AI JC"
+                initial={{scale:0.3}}
+                viewport={{once:true}}
+                whileInView={{scale:1}}
+                transition={{duration:0.75}}
+                >
                     <div className="video_data DF AI JC">
                         <p>Watch Video <span>About This</span></p>
                         <span></span>
@@ -225,58 +238,133 @@ handleCrouler();
                             src={video_img}></motion.img>
                         </Link>
                     </div>
-                </div>
+                </motion.div>
                 <span className="empty_span"></span>
-                <div className="Photo_presentation">
+                <motion.div className="Photo_presentation"
+                 viewport={{ once: true }}
+                 initial={{y:"20%"}}
+                 whileInView={{
+                     y: 0,
+                     transition: {
+                         duration: 0.3,
+                         ease: "linear",
+                         // when:"beforeChildren"
+                     }
+ 
+                 }}
+                 transition={{ when: "beforeChildren" }}
+                >
                     <div className="image_photo_presentation DF AI JC"
 
                     >
-                        <p>Master Bedroom</p>
-                        <img src={img}></img>
+                        <motion.p
+                        initial={{opacity:0,scale:0.3}}
+                        whileInView={{opacity:1,scale:1}}
+                        transition={{duration:0.5,delay:0.5}}
+                        >Master Bedroom</motion.p>
+                        <motion.img src={img}
+                        
+                        ></motion.img>
                     </div>
                     <div className="image_data_photo_presentation DF AI JC">
                         <div className="im01gh DF AI JC">
-                            <div className="aabbcc">
-                                <div></div>
+                            <div className="aabbcc"
+                           
+                            >
+                                <motion.div
+                                initial={{width:"0%"}}
+                                viewport={{once:true}}
+                                whileInView={{width:["100%","70%"],height:"5px"}}
+                                transition={{duration:0.75}}
+                                ></motion.div>
                             </div>
-                            <div className="aabbcc2 DF AI JC">
-                                <p>The Well Architectured Design and Statified Data Oriented Air flow structure for better dynamic Air collinThe Well Architectured Design and Statified Data Oriented Air flow structure for better dynamic Air collingThe Well Architectured Design and Statified Data Oriented Air flow structure for better dynamic Air collingg</p>
+                            <div className="aabbcc2 DF AI"
+                            style={{
+                                justifyContent:"flex-end"
+                            }}
+                            >
+                                <motion.p
+                                 style={{
+                                    textAlign:"right",
+                                    paddingRight:"5%"
+                                    
+                                }}
+                                initial={{scale:0}}
+                                viewport={{once:true}}
+                                whileInView={{scale:1}}
+                                transition={{duration:0.5,ease:"easeInOut"}}
+                                >The Well Architectured Design and Statified Data Oriented Air flow structure for better dynamic Air collinThe Well Architectured Design and Statified Data Oriented Air flow structure for better dynamic Air collingThe Well Architectured Design and Statified Data Oriented Air flow structure for better dynamic Air collingg
+                                </motion.p>
                             </div>
                         </div>
 
 
                     </div>
 
-                </div>
+                </motion.div>
                 <span style={{
                     height: "5vh",
                     width: "100vw"
                 }}></span>
-                <div className="Photo_presentation_right">
+                <motion.div className="Photo_presentation_right"
+                 viewport={{ once: true }}
+                 initial={{y:"20%"}}
+                 whileInView={{
+                     y: 0,
+                     transition: {
+                         duration: 0.5,
+                         ease: "linear",
+                         // when:"beforeChildren"
+                     }
+ 
+                 }}
+                >
                     <div className="image_photo_presentation DF AI JC image_pp_right"
 
                     >
-                        <p>Family Hall</p>
+                        <motion.p
+                         initial={{opacity:0,scale:0}}
+                         viewport={{once:true}}
+                         whileInView={{opacity:1,scale:1}}
+                         transition={{duration:0.5,delay:0.5}}
+                        >Family Hall</motion.p>
                         <img src={img}></img>
                     </div>
                     <div className="image_data_photo_presentation DF AI JC">
                         <div className="im01gh DF AI JC">
                             <div className="aabbcc aabbcc_right">
-                                <div></div>
+                                <motion.div
+                                initial={{width:"0%"}}
+                                viewport={{once:true}}
+                                whileInView={{width:["100%","70%"],height:"5px"}}
+                                transition={{duration:0.75}}
+                                ></motion.div>
                             </div>
                             <div className="aabbcc2 DF AI JC aabbcc2_right">
-                                <p>The Well Architectured Design and Statified Data Oriented Air flow structure for better dynamic Air collinThe Well Architectured Design and Statified Data Oriented Air flow structure for better dynamic Air collingThe Well Architectured Design and Statified Data Oriented Air flow structure for better dynamic Air collingg</p>
+                                <motion.p
+                                 initial={{scale:0}}
+                                 viewport={{once:true}}
+                                 whileInView={{scale:1}}
+                                 transition={{duration:0.5,ease:"easeInOut"}}
+                                >The Well Architectured Design and Statified Data Oriented Air flow structure for better dynamic Air collinThe Well Architectured Design and Statified Data Oriented Air flow structure for better dynamic Air collingThe Well Architectured Design and Statified Data Oriented Air flow structure for better dynamic Air collingg
+
+                                </motion.p>
                             </div>
                         </div>
 
 
                     </div>
 
-                </div>
+                </motion.div>
                 <div
                     className="Photo_gallery_div"
                 >
-                    <p>Photo Gallery</p>
+                    <motion.p
+                    initial={{scale:0.3,opacity:0}}
+                    viewport={{once:true}}
+                    whileInView={{opacity:1,scale:1}}
+                    transition={{duration:0.5,}}
+                    >Photo Gallery</motion.p>
                 </div>
                 <div className="gallery_display">
                     <div className="selection_crouler DF AI JC" id="selection_crouler">
@@ -313,8 +401,18 @@ handleCrouler();
                     </div>
                     <div className="stats">
                         <div className="stats_container DF AI JC">
-                            <p className="title_stats">About Rose House</p>
-                            <div className="Describe">
+                            <motion.p className="title_stats"
+                             initial={{opacity:0,scale:0}}
+                             viewport={{once:true}}
+                             whileInView={{opacity:1,scale:1}}
+                             transition={{duration:0.5,when:"beforeChildren",type:"spring",stiffness:500}}
+                            >About Rose House</motion.p>
+                            <motion.div className="Describe"
+                            initial={{opacity:0,scale:0}}
+                            viewport={{once:true}}
+                            whileInView={{opacity:1,scale:1}}
+                             transition={{duration:0.5,delay:0.5,when:"beforeChildren"}}
+                            >
                                 <p className="Description_of_house">
                                     The philosophy of the schools challenges the notion of a big school community by breaking it into 3 smaller families, meant to be governed by the head of each.
                                 </p>
@@ -325,9 +423,11 @@ handleCrouler();
                                     The philosophy of the schools challenges the notion of a big school community by breaking it into 3 smaller families, meant to be governed by the head of each.
                                 </p>
                                 <div className="stats_div">
-                                    <p className="property_name">
+                                    <motion.p className="property_name"
+                                    
+                                    >
                                         Location
-                                    </p>
+                                    </motion.p>
                                     <p className="property_value">
                                         Surat , Gujarat
                                     </p>
@@ -383,17 +483,40 @@ handleCrouler();
 
 
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
 
                     </div>
                     <div className="gallery">
                         <div className="gallery_container ">
-                            <div className="gallery_image_div" data-count="1"
+                            {
+                                image_src.map((e,i)=>{
+                                         return (
+                                            <motion.div className="gallery_image_div" 
+                                            initial={{ y: "20%",scale:0.5 }}
+                                            viewport={{ once: true }}
+                                            whileInView={{
+                                                y: 0,
+                                                scale:1,
+                                                transition: {
+                                                    duration: 0.5,
+                                                    ease: "linear",
+                                                    // when:"beforeChildren"
+                                                }
+
+                                            }}
+                                onClick={enableFull}
+                            >
+                                <img src={e}></img>
+                            </motion.div>
+                                         )
+                                })
+                            }
+                            {/* <motion.div className="gallery_image_div" data-count="1"
                                 onClick={enableFull}
                             >
                                 <img src={img}></img>
-                            </div>
+                            </motion.div>
 
                             <div className="gallery_image_div" data-count="2"
                             onClick={enableFull}
@@ -409,7 +532,7 @@ handleCrouler();
                             onClick={enableFull}
                             >
                                 <img src={image_src[2]}></img>
-                            </div>
+                            </div> */}
 
 
 
@@ -418,12 +541,35 @@ handleCrouler();
                         </div>
                     </div>
                 </div>
-                <div className="detail_description_div">
+                <motion.div className="detail_description_div"
+                 viewport={{ once: true }}
+                 initial={{y:"20%"}}
+                 whileInView={{
+                     y: 0,
+                     transition: {
+                         duration: 0.5,
+                         ease: "linear",
+                         when:"beforeChildren"
+                     }
+ 
+                 }}
+                >
                     <div className="detail_description_title">
-                        <p>Detail Description</p>
+                        <motion.p
+                        style={{color:"var(--primary-color)"}}
+                        initial={{opacity:0,scale:0}}
+                            viewport={{once:true}}
+                            whileInView={{opacity:1,scale:1}}
+                             transition={{duration:0.5,delay:0.5}}
+                        >Detail Description</motion.p>
                         <div></div>
                     </div>
-                    <div className="project_description">
+                    <motion.div className="project_description"
+                    initial={{opacity:0,scale:0}}
+                    viewport={{once:true}}
+                    whileInView={{opacity:1,scale:1}}
+                     transition={{duration:0.5,delay:0.5}}
+                    >
                         <p>
                             The The school is made intimate by making 3 independent school clusters with one section for each grade, along with their own creative labs.philosophy of the schools challenges the notion of a big school community by breaking it into 3 smaller families, meant to be governed by the head of each.
                         </p>
@@ -434,9 +580,9 @@ handleCrouler();
                         <p>
                             The The school is made intimate by making 3 independent school clusters with one section for each grade, along with their own creative labs.philosophy of the schools challenges the notion of a big school community by breaking it into 3 smaller families, meant to be governed by the head of each.
                         </p>
-                    </div>
+                    </motion.div>
 
-                </div>
+                </motion.div>
                 <Fott></Fott>
             </motion.div>
 }

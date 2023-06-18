@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useMotionValue,animate } from "framer-motion";
 import { useEffect,useState } from "react";
 import Load from "./Load";
 function Service() {
@@ -10,6 +10,7 @@ function Service() {
         "https://4.imimg.com/data4/XY/ED/MY-27587645/layout-building-design-500x500.jpg",
         "https://flyingcdn-98ab332c.b-cdn.net/wp-content/uploads/2022/03/interior-designer-in-delhi.jpg"
     ];
+    
   useEffect(()=>{
     var config={
         rootMargin:"0px 0px 0px 0px",
@@ -111,31 +112,34 @@ function Service() {
             <motion.div className="services_div DF AI JC" id="service_div"
             initial={{x:"-100%",opacity:0}}
              animate={{x:"0%",opacity:1}}
-             transition={{duration:1,ease:"easeInOut"}}
+             transition={{duration:0.5,ease:"linear"}}
              exit={{x:"-100%"}}
             >
 {
             intersect==true ? <p>not intersecting</p>:
                 <motion.div className="services_container DF AI JC"
-                initial={{y:"50%",opacity:0}}
-             animate={{y:"0%",opacity:1}}
-             transition={{duration:1,ease:"easeIn",when:"beforeChildren"}}
-          
+            //     initial={{y:"20%",scale:0.5}}
+            //  animate={{y:"0%",scale:1}}
+            //  transition={{duration:0.75,ease:"linear",when:"beforeChildren"}}
+             initial={{y:"10%",opacity:0}}
+             whileInView={{y:"0%",opacity:1}}
+             viewport={{once:true}}
+             transition={{duration:0.73,ease:"easeIn",when:"beforeChildren"}}
                 >
                     <div className="services_title">
                         <motion.p
                         initial={{opacity:0}}
                         animate={{opacity:1}}
-                        transition={{duration:1,}}
+                        transition={{duration:0.5,}}
                         >Our Services</motion.p>
                     </div>
                     <div className="services_slider DF AI JC">
                         <div className="services_slider1">
                             <div className="services_slider2" id="image_container_services">
                                 <motion.img
-                                    initial={{ y: "-100%", opacity: 0 }}
+                                    initial={{ y: "-50%", opacity: 0 }}
                                     animate={{ y: "0%", opacity: 1 }}
-                                    transition={{ duration: 1 }}
+                                    transition={{ duration: 0.5 }}
                                     // exit={{y:"-100%"}}
                                     // src={images[0]} 
                                     className="image_container"
@@ -144,13 +148,13 @@ function Service() {
                                 <motion.div
                                     initial={{ x: "-100%" }}
                                     animate={{ x: "0%" }}
-                                    transition={{ duration: 1, delay: 1 }}
+                                    transition={{ duration: 0.5, delay: 0 }}
                                     className="services_list_div">
                                     <motion.p
                                         whileHover={{ y: "-5px" }}
                                         initial={{ x: "-100%" }}
                                         animate={{ x: "0%" }}
-                                        transition={{ duration: 1, delay: 1 }}
+                                        transition={{ duration: 0.5, delay: 0.15 }}
                                         id="service_architect"
                                         className="services_common"
                                         onClick={(e) => { changeService(e.target.id) }}
@@ -159,7 +163,7 @@ function Service() {
                                         whileHover={{ y: "-5px" }}
                                         initial={{ x: "-100%" }}
                                         animate={{ x: "0%" }}
-                                        transition={{ duration: 1, delay: 1.4 }}
+                                        transition={{ duration: 0.5, delay: 0.30 }}
                                         id="service_landscape"
                                         className="services_common"
                                         onClick={(e) => { changeService(e.target.id) }}
@@ -168,7 +172,7 @@ function Service() {
                                         whileHover={{ y: "-5px" }}
                                         initial={{ x: "-100%" }}
                                         animate={{ x: "0%" }}
-                                        transition={{ duration: 1, delay: 1.6 }}
+                                        transition={{ duration: 0.5, delay: 0.45 }}
                                         id="service_planning"
                                         className="services_common"
                                         onClick={(e) => { changeService(e.target.id) }}
@@ -177,7 +181,7 @@ function Service() {
                                         whileHover={{ y: "-5px" }}
                                         initial={{ x: "-100%" }}
                                         animate={{ x: "0%" }}
-                                        transition={{ duration: 1, delay: 2 }}
+                                        transition={{ duration:0.5, delay:0.60 }}
                                         id="service_interior"
                                         className="services_common"
                                         onClick={(e) => { changeService(e.target.id) }}

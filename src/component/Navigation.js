@@ -80,7 +80,7 @@ function Navigation(){
                 <motion.button
               onHoverStart={e=>{e.target.style.background="var(--primary-color)";e.target.style.color="white";}}
               onHoverEnd={e=>{e.target.style.background="none";e.target.style.color="var(--primary-color)";}}
-              whileHover={{scale:1.05}}
+              whileHover={{scale:1.03}}
                 className='contact_us_button'>
                 Contact Us
               </motion.button>

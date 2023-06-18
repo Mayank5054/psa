@@ -151,5 +151,5 @@ align-items: flex-end;
 .footer_div{
     height:50vh;
     width:100vw;
-    background:blue;
+    /* background:blue; */
 }

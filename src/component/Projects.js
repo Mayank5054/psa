@@ -56,8 +56,10 @@ function Projects() {
             <motion.div className="projects_div"
                 initial={{ x: "100%", opacity: 0 }}
                 animate={{ x: "0%", opacity: 1 }}
-                transition={{ duration: 1, ease: "easeInOut", when: "beforeChildren" }}
-                exit={{ x: "-100%" }}
+                transition={{ duration: 0.5, ease: "easeIn",}}
+                exit={{ x: "-100%",
+                transition:{duration:0.2,ease:"linear"}
+            }}
                 ref={ref}
             >
                 <div className="projects_div1">
