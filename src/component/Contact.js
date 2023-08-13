@@ -12,46 +12,48 @@ import { useEffect } from "react";
 import Fott from "./Fott";
 function Contact() {
 
-    // window.onload = () => {
-    //     function load() {
-    //         try {
-    //             var map = new google.maps.Map(document.getElementById("map_div"), {
-    //                 center: { lat: 21.141536, lng: 72.780367 },
-    //                 zoom: 20,
-    //                 zoomControl: true,
-    //                 scaleControl: true,
-    //                 mapTypeControl: true,
-    //                 StreetViewControlOptions: true
-    //             });
-    //             //
-    //             var marker = new google.maps.Marker(
-    //                 {
-    //                     position: { lat: 21.141536, lng: 72.780367 },
-    //                     map: map,
-    //                     label: "PS Architect's",
-    //                     animation: google.maps.Animation.DROP,
+    window.onload = () => {
+        function load() {
+            try {
+                var map = new google.maps.Map(document.getElementById("map_div"), {
+                    center: { lat: 21.141536, lng: 72.780367 },
+                    zoom: 20,
+                    zoomControl: true,
+                    scaleControl: true,
+                    mapTypeControl: true,
+                    StreetViewControlOptions: true
+                });
+                //
+                var marker = new google.maps.Marker(
+                    {
+                        position: { lat: 21.141536, lng: 72.780367 },
+                        map: map,
+                        label: "PS Architect's",
+                        animation: google.maps.Animation.DROP,
 
-    //                 }
-    //             );
+                    }
+                );
 
-    //             //             var icon = new google.maps.MarkerImage('../images/house02.png');
-    //             // marker.setIcon(icon);
-    //             console.log("map", map);
-    //         } catch (e) {
+                //             var icon = new google.maps.MarkerImage('../images/house02.png');
+                // marker.setIcon(icon);
+                console.log("map", map);
+            } catch (e) {
 
-    //         }
-    //     }
-    //     load();
+            }
+        }
+        load();
 
 
-    // }
-
+    }
+    useEffect(()=>{
+        window.scrollTo(0,0);
+        },[])
     return (
         <>
         <motion.div
        initial={{x:"100%",opacity:0}}
         animate={{x:"0%",opacity:1}}
-        transition={{duration:1,ease:"easeInOut"}}
+        transition={{duration:2,ease:"easeInOut"}}
         exit={{x:"-100%"}}
         >
         <motion.div className="contact_page_div"

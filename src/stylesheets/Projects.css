@@ -234,3 +234,223 @@ transform: translate(0%,0%);
     background:red;
     padding:0% 5px 0% 5px;
 }
+@media (max-width:1616px){
+    .image_wrapper_container > p{
+        font-size: 50px;
+        padding-left:5%;
+        padding-right:50%;
+    }
+    .data_projects_initiated > p{
+        font-size: 50px;
+    }
+    .data_projects_initiated > p:nth-child(2){
+        font-size: 18px;
+        margin-top:5%;
+    }
+    .data_projects_initiated > p{
+        font-size:40px;
+    }
+    .house_menu1 > p{
+        margin-left: 10%;
+    }
+    .projects_part2_1{
+        gap: 40px 60px;
+    }
+    .house_presentation{
+        height:50vh;
+    }
+    .image_house_presentation{
+        width:90%;
+    }
+   
+    .data_image_presentation > p{
+        font-size: 33px;
+    }
+}
+@media (max-width:1513px){
+    .image_wrapper_container > p{
+        padding-right:45%;
+    }
+    .house_menu1 > p{
+        margin-left: 12%;
+    }
+    .house_presentation{
+        height:52vh;
+    }
+    .image_house_presentation{
+        width:100%;
+    }
+    .data_image_presentation > p{
+        font-size: 37px;
+        
+    }
+}
+@media (max-width:1441px){
+    .image_wrapper_container > p{
+        font-size: 45px;
+    }
+    .data_projects_initiated > p{
+        font-size: 45px;
+    }
+    .data_projects_initiated > p:nth-child(2){
+        font-size: 15px;
+        margin-top:5%;
+    }
+}
+@media (max-width:1376px){
+    .house_menu1{
+        margin-left:-5%;
+    }
+    .house_menu1 > p{
+        margin-left: 15%;
+        font-size:22px;
+    }
+     .house_menu1 > p{
+        margin-left: 12%;
+    }
+    .house_presentation{
+        height:46vh;
+    }
+    .image_house_presentation{
+        width:95%;
+    }
+    .data_image_presentation > p{
+        font-size: 34px;
+        margin-top:-1%;
+    }
+    .data_image_presentation > p:nth-child(2){
+        font-size: 18px;
+        margin-top:0%;
+    }
+}
+@media (max-width:1271px){
+    .house_presentation{
+        height:48vh;
+        width:43vw;
+    }
+    .image_house_presentation{
+        width:100%;
+    }
+    .data_image_presentation > p{
+        font-size: 35px;
+        margin-top:-2%;
+    }
+    .data_image_presentation > p:nth-child(2){
+        font-size: 19px;
+        /* margin-top:0%; */
+    }
+}
+@media (max-width:1187px){
+    .house_menu1{
+        margin-left:-5%;
+    }
+    .house_menu1 > p{
+        margin-left: 15%;
+    }
+    .house_presentation{
+        height:45vh;
+        width:44vw;
+    }
+    .image_house_presentation{
+        width:100%;
+    }
+    .data_image_presentation > p{
+        font-size: 35px;
+        margin-top:-2%;
+    }
+    .data_image_presentation > p:nth-child(2){
+        font-size: 19px;
+        /* margin-top:0%; */
+    }
+}
+@media (max-width:1112px){
+    .image_wrapper_container > p{
+        padding-right:40%;
+    }
+    .image_wrapper_container > p{
+        font-size: 43px;
+    }
+    .data_projects_initiated > p{
+        font-size: 43px;
+    }
+    .data_projects_initiated > p:nth-child(2){
+        font-size: 15px;
+        margin-top:5%;
+    }
+    .house_presentation{
+        height:45vh;
+      
+    }
+ 
+    .data_image_presentation > p{
+        font-size: 30px;
+        margin-top:-1%;
+    }
+    .data_image_presentation > p:nth-child(2){
+        font-size: 19px;
+        /* margin-top:0%; */
+    }
+}
+@media (max-width:1052px){
+    .house_menu1{
+        margin-left:-10%;
+    }
+    .house_menu1 > p{
+        margin-left: 25%;
+    }
+    .data_projects_initiated > p:nth-child(2){
+        font-size: 15px;
+        margin-top:5%;
+    }
+    .house_presentation{
+        height:43vh;
+        width:45vw;
+    }
+ 
+    .data_image_presentation > p{
+        font-size: 27px;
+        margin-top:-1%;
+    }
+    .data_image_presentation > p:nth-child(2){
+        font-size: 16px;
+    }
+}
+@media (max-width:939px){
+    .image_wrapper_container > p{
+        padding-right:33%;
+    }
+    .image_wrapper_container > p{
+        font-size: 42px;
+    }
+    .data_projects_initiated > p{
+        font-size: 40px;
+    }
+    .data_projects_initiated > p:nth-child(2){
+        font-size: 15px;
+        margin-top:5%;
+    }
+}
+@media (max-width:890px){
+    .projects_part2_1{
+        grid-template-columns: auto;
+        gap:30px;
+    }
+    .house_presentation{
+        height:48vh;
+        width:60vw;
+    }
+ 
+    .data_image_presentation > p{
+        font-size: 35px;
+        margin-top:-1.5%;
+    }
+    .data_image_presentation > p:nth-child(2){
+        font-size: 16px;
+    }
+}
+@media (max-width:802px){
+    .house_presentation{
+        height:50vh;
+        width:75vw;
+    }
+}

@@ -1,0 +1,128 @@
+.about_mobile_div{
+    height:65vh;
+    width:100vw;
+    /* background:red; */
+    margin-top: -10%;
+}
+.about_mobile_title{
+    height:15%;
+    width:100%;
+    /* background:green; */
+    display: flex;
+    align-items: center;
+}
+.about_mobile_title > p{
+    font-size: 35px;
+    font-family: "josefin_bold";
+    padding-left:7%;
+    color:var(--primary-color);
+}
+.about_mobile_content{
+    height:85%;
+    width:100%;
+    background:yellow;
+    position: relative;
+}
+.about_mobile_content > img{
+    height:100%;
+    width:100%;
+}
+.wrapper_about_mobile{
+position:absolute;
+height:100%;
+width:100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background: linear-gradient(to bottom,#EFBF3990  ,#763A1290),rgba(0,0,0,0.6);
+}
+.full_content_vision_mobile{
+    height:80%;
+    width:90%;
+    /* background:red; */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+     flex-direction: row;
+}
+.full_content_part1{
+height:100%;
+width:50%;
+/* overflow-y: scroll; */
+scrollbar-width: thin;
+/* background:yellow; */
+display: flex;
+align-items:center;
+justify-content: center;
+flex-direction: column;
+}
+.full_content_part1 >p{
+    font-size:17px;
+    padding:0% 5% 0% 5%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+color:white;
+font-family: "josefin_light";
+line-height: 1;
+/* background:red; */
+
+}
+.full_content_part1 > .see_more_class{
+    font-family: "josefin_bold";
+    font-size: 23px;
+    margin-top:-0%;
+    color:var(--primary-color);
+    position:relative;
+    /* background:red; */
+    width:100%;
+    padding-left:10%;
+    display:flex;
+    align-items:center;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.see_more_class > span{
+   
+    /* padding-left:5%; */
+    /* background: red; */
+}
+.see_more_class > img{
+/* position:absolute;
+margin:5% 10% 5% 10%; */
+padding-left:5%;
+height:20%;
+
+}
+.full_content_part2{
+    height:100%;
+width:50%;
+    /* background:blue; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    border-left:1px solid white;
+}
+.rectangle01{
+    height:100%;
+    width:100%;
+
+    /* background:red; */
+}
+.rectangle01 > img{
+    height:70%;
+    width:70%;
+    position:relative;
+}
+.rectangle01 > p{
+    font-size:20px;
+    position:absolute;
+    color:white;
+    
+}
+.rectangle01 > .project_data_about_mobile{
+    margin-top:25%;
+    
+}
+.rectangle01 > .data_about_mobile{
+    font-size: 35px;
+}

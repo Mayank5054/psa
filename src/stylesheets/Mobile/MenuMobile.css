@@ -1,0 +1,56 @@
+.mobile_menu_div{
+    height:11vh;
+    width:100%;
+    /* background:red; */
+    box-shadow: 1px 1px 3px black;
+    position: relative;
+}
+.logo_menu{
+    height:30%;
+    width:20%;
+    /* background:green; */
+}
+.logo_menu > img{
+    height:100%;
+    width:100%;
+}
+.drop_down_btn{
+    position:absolute;
+    height:100%;
+    width:15%;
+    right:0;
+    /* background:red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drop_down_btn > i{
+font-size: 30px;
+}
+.mobile_menu_div_temp1{
+    height:0vh;
+    width:100vw;
+    position:fixed;
+    background:var(--primary-color);
+    transition:height 0.5s;
+    flex-direction: column;
+    overflow: hidden;
+}
+.mobile_menu_div_temp1 > a > p{
+   
+    font-size:30px;
+    color:var(--primary-color2);
+    font-family: "josefin_bold";
+    letter-spacing: 2px; 
+    
+}
+.mobile_menu_div_temp1 > a:nth-child(1) > p:nth-child(1){
+    outline:3px solid var(--primary-color2);
+    outline-offset: 7px;
+}
+
+.animation_menu{
+   height:89vh;
+   transition:height 0.5s;
+   z-index:1;
+}

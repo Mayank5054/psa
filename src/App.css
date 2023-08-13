@@ -9,6 +9,13 @@
 @import url("./stylesheets/footer.css");
 @import url("./stylesheets/contact.css");
 @import url("./stylesheets/load.css");
+@import url("./stylesheets/Mobile/MenuMobile.css");
+@import url("./stylesheets/animationMobile.css");
+@import url("./stylesheets/Mobile/CroulerMobile.css");
+@import url("./stylesheets/Mobile/AboutMobile.css");
+@import url("./stylesheets/Mobile/ServiceMobile.css");
+@import url("./stylesheets/Mobile/FooterMobile.css");
+@import url("./stylesheets/Mobile/ProjectsMobile.css");
 :root{
   --primary-color:#EFBF39;
   --primary-color2:#763A12;
@@ -21,6 +28,7 @@
 }
 body{
   overflow-x:hidden;
+
 }
 a{
   text-decoration: none;

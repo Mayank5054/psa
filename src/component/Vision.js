@@ -84,12 +84,12 @@ useEffect(()=>{
     return (
         <>
             <motion.div className="vision_div"
-           initial={{x:"100%",opacity:0}}
-            animate={{x:"0%",opacity:1}}
-        // initial={{opacity:0,scale:0}}
-        // whileInView={{opacity:1,scale:1}}
-            transition={{duration:0.5,ease:"linear"}}
-            exit={{x:"-100%"}}
+        //    initial={{x:"100%",opacity:0}}
+        //     animate={{x:"0%",opacity:1}}
+        // // initial={{opacity:0,scale:0}}
+        // // whileInView={{opacity:1,scale:1}}
+        //     transition={{duration:0.5,ease:"linear"}}
+        //     exit={{x:"-100%"}}
             style={{
                 overflow:"hidden"
             }}

@@ -49,16 +49,18 @@ function Projects() {
         })
 
     }, [])
-
+useEffect(()=>{
+window.scrollTo(0,0);
+},[])
 
     return (
         <>
             <motion.div className="projects_div"
                 initial={{ x: "100%", opacity: 0 }}
                 animate={{ x: "0%", opacity: 1 }}
-                transition={{ duration: 0.5, ease: "easeIn",}}
+                transition={{ duration: 0.75, ease: "easeIn",}}
                 exit={{ x: "-100%",
-                transition:{duration:0.2,ease:"linear"}
+                transition:{duration:1,ease:"linear"}
             }}
                 ref={ref}
             >

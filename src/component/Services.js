@@ -110,27 +110,28 @@ function Service() {
            
            
             <motion.div className="services_div DF AI JC" id="service_div"
-            initial={{x:"-100%",opacity:0}}
-             animate={{x:"0%",opacity:1}}
-             transition={{duration:0.5,ease:"linear"}}
-             exit={{x:"-100%"}}
+            // initial={{x:"-100%",opacity:0}}
+            //  animate={{x:"0%",opacity:1}}
+            //  transition={{duration:0.5,ease:"linear"}}
+            //  exit={{x:"-100%"}}
             >
-{
-            intersect==true ? <p>not intersecting</p>:
+{/* {
+            intersect==true ? <p>not intersecting</p>: */}
                 <motion.div className="services_container DF AI JC"
+                initial={{y:"10%",opacity:0}}
+             whileInView={{y:"0%",opacity:1}}
+             viewport={{once:true}}
+             transition={{duration:0.5,ease:"easeIn",when:"beforeChildren"}}
             //     initial={{y:"20%",scale:0.5}}
             //  animate={{y:"0%",scale:1}}
             //  transition={{duration:0.75,ease:"linear",when:"beforeChildren"}}
-             initial={{y:"10%",opacity:0}}
-             whileInView={{y:"0%",opacity:1}}
-             viewport={{once:true}}
-             transition={{duration:0.73,ease:"easeIn",when:"beforeChildren"}}
+       
                 >
                     <div className="services_title">
                         <motion.p
                         initial={{opacity:0}}
                         animate={{opacity:1}}
-                        transition={{duration:0.5,}}
+                        transition={{duration:0.5}}
                         >Our Services</motion.p>
                     </div>
                     <div className="services_slider DF AI JC">
@@ -191,7 +192,7 @@ function Service() {
                         </div>
                     </div>
                 </motion.div>
-}
+{/* } */}
             </motion.div>
 
         </>

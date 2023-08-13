@@ -1,0 +1,101 @@
+.footer_mobile_class{
+    height:70vh;
+    width:100vw;
+    background:#D3D3D3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.company_logo{
+    height:15%;
+    width:100%;
+    /* background:red; */
+    justify-content: flex-start;
+}
+.company_logo > img{
+    height:32%;
+    padding-left:7%;
+}
+.company_content{
+    height:75%;
+    width:100%;
+    background:var(--primary-color);
+}
+.company_content > .left{
+    min-height:90%;
+    width:45%;
+    display: flex;
+    align-items:flex- start;
+    /* background:yellow; */
+}
+.company_content > .left > p{
+    font-size:15px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    margin-left:5%;
+    margin-right:3%;
+}
+.company_content > .center{
+    height:90%;
+    width:30%;
+    background:var(--primary-color);
+    /* box-shadow: 1px 0px 2px #434343; */
+}
+.company_content > .center > .title_center{
+    height:20%;
+    /* background:var(--primary-color2); */
+    /* backdrop-filter:brightness(60%); */
+}
+.links_title{
+    font-size: 20px;
+    color:white;
+    letter-spacing: 2px;
+}
+.quick_links{
+    flex-direction: column;
+}
+.quick_links > a{ 
+    font-size: 20px;
+    /* margin:2%; */
+    text-decoration: none;
+    cursor: pointer;
+    /* color:var(--primary-color2); */
+}
+
+.company_content > .end{
+    height:60%;
+    width:15%;
+    /* background:green; */
+    flex-direction: column; 
+    flex-wrap: wrap;  
+}
+.company_content > .end > a{
+    /* height:5; */
+    width:10%;
+    padding:5% 3% 2% 3%;
+    /* border-radius:5%; */
+    /* filter:; */
+    /* background:var(--primary-color2); */
+}
+.company_content > .end > a > img{
+    /* width:%; */
+    height:80%;
+    
+}
+.rights_reserved{
+    height:10%;
+    width:100%;
+    background:var(--primary-color);
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-top:1px dotted #434343;
+}
+.rights_reserved > p{
+    font-size: 16px;
+    padding-left:3%;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    color:white;
+}

@@ -1,0 +1,37 @@
+@keyframes open_menu{
+    0%{
+        height:0vh;
+        
+    }
+    100%{
+        height:89vh;    }
+    
+}
+@keyframes close_menu{
+    0%{
+        height:89vh;
+    }
+    100%{
+        height:0vh;    }
+    
+
+}
+@keyframes changeContent{
+    0%{
+        margin-top:0%;
+        opacity:1;
+    }
+    50%{
+        margin-top:-7%;
+        opacity: 0;
+    }
+    55%{
+        margin-top:15%;
+        opacity:0;
+    }
+    100%{
+        margin-top:0%;
+        opacity:1;
+    }
+    
+}

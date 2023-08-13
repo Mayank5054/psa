@@ -151,9 +151,12 @@ function upgrade_val(a){
     var [len,setLen]=useState(0);
     var [load,setLoad]=useState(true);
     useEffect(()=>{
-setInterval(()=>{
-handleCrouler();
-},6000)
+// setInterval(()=>{
+// handleCrouler();
+// if(count==2){
+//     clearInterval(this);
+// }
+// },6000)
     },[])
     useEffect(()=>{
         if(document.readyState=="complete"){
@@ -192,7 +195,7 @@ handleCrouler();
         exit={{x:"-100%"}}
                     >
                         <div className="Image_Slider1">
-                            <img src={image_src[0]} id="image_project_data"></img>
+                            <img src={image_src[1]} id="image_project_data"></img>
                             <div className="blurer_Image_Slider1">
                                 <div className="image_Description">
                                     <motion.p
@@ -254,7 +257,7 @@ handleCrouler();
                  }}
                  transition={{ when: "beforeChildren" }}
                 >
-                    <div className="image_photo_presentation DF AI JC"
+                    <div className="image_photo_presentation DF AI JC  image_pp_left"
 
                     >
                         <motion.p
@@ -267,7 +270,7 @@ handleCrouler();
                         ></motion.img>
                     </div>
                     <div className="image_data_photo_presentation DF AI JC">
-                        <div className="im01gh DF AI JC">
+                        <div className="im01gh DF AI JC ">
                             <div className="aabbcc"
                            
                             >

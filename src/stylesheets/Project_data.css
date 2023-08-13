@@ -25,7 +25,7 @@
 .Image_Slider1 > img{
     /* height:100%;
     width:100%; */
-    /* height:100%; */
+    height:100%;
     width:70%;
     margin-left:30%;
 }
@@ -224,6 +224,8 @@ background:var(--primary-color);
     max-width:70%;
     /* background:yellow; */
     font-size: 22px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
     
 }
 .aabbcc2_right{
@@ -356,6 +358,7 @@ font-size: 15px;
 .detail_description_div{
 min-height:50vh;
 width:100%;
+padding-bottom:3%;
 /* background:red; */
 }
 
@@ -455,5 +458,322 @@ font-size: 20px;
     color: #434343;
     margin-left: 31%;
     font-family: "josefin_light";
-
  }
+
+ @media (max-width:1616px){
+    .image_Description{
+        margin-left:-45%;
+        border:3px solid var(--primary-color);
+        padding:2% 3% 2% 3%;
+    }
+    .image_Description > p{
+        font-size:70px;
+    }
+    .video_data > p{
+        font-size: 21px;
+    }
+    .image_photo_presentation > p{
+        font-size:45px;
+    }
+    .aabbcc2{
+        overflow:scroll;
+        scroll-behavior: smooth;
+        scrollbar-width: 0;
+        justify-content: center !important;
+        align-items:center;
+    }
+    .aabbcc2 > p{
+        font-size:25px;
+        max-width:90%;
+        padding-right:0%;
+        text-align: center !important;
+        padding-right:5% !important;
+    }
+    .aabbcc{
+        display: none;
+    }
+    .detail_description_title > p{
+        font-size:38px;
+    }
+    
+ }
+ @media (max-width:1513px){
+   
+    .image_Description > p{
+        font-size:65px;
+    }
+    .Video_div{
+        width:27vw;
+    }
+    .project_description > p{
+        max-width: 80%;
+        margin-left:-9.5%;
+    }
+    .detail_description_title{
+        margin-right:5%;
+      
+    }
+ }
+ @media (max-width:1441px){
+    .image_photo_presentation > img{
+        height:75%;
+    }
+    .Photo_gallery_div{
+        margin-top:-1%;
+    }
+    .gallery{
+        width:60%;
+    }
+    .stats{
+        width:38%;
+    }
+    .gallery_container{
+        grid-template-columns: auto auto;
+        column-gap: auto;
+        row-gap: auto;
+    }
+    .gallery_image_div{
+        width:30vw;
+        height:35vh;
+    }
+ }
+ @media (max-width:1376px){
+   .image_Description{
+    margin-top:-10%;
+   }
+    .image_Description > p{
+        font-size:65px;
+    }
+    .Video_div{
+        margin-top:-3%;
+
+        width:29vw;
+    }
+    .image_photo_presentation > img{
+        height:70%;
+    }
+    .aabbcc2 > p{
+        font-size: 23px;
+    }
+    .stats{
+        width:35%;
+    }
+    .gallery_image_div{
+        width:31vw;
+        height:37vh;
+    }
+    .detail_description_title > p{
+        font-size: 40px;
+    }
+    .detail_description_title > div{
+        width:25%;
+    }
+    .project_description > p{
+        max-width: 85%;
+        margin-left: -3.5%;
+    }
+ }
+ @media (max-width:1271px){
+     .Video_div{
+         width:32vw;
+     }
+     .video_data > p{
+        font-size: 23px;
+     }
+     .counter > p{
+        font-size: 55px;
+     }
+     .image_pp_left > img{
+        margin-left:10%;
+     }
+    .image_pp_right > img{
+        margin-right:10%;
+    }
+    .aabbcc2 > p{
+        font-size:22px;
+    }
+  }
+  @media (max-width:1187px){
+    .Video_div{
+        width:35vw;
+    }
+    .video_data > p{
+       font-size: 23px;
+    }
+    .counter > p{
+       font-size: 55px;
+    }
+    .aabbcc2::-webkit-scrollbar-thumb{
+        background-color: var(--primary-color);
+    } 
+    .aabbcc2 > p{
+        max-height:75%;
+        max-width:80%;
+    }
+    /* .Photo_gallery_div{ */
+        /* margin-top:-2%;
+    }
+    .stats{
+        width:35%;
+    } */
+    .gallery_image_div{
+        width:30vw;
+        height:33vh;
+    }
+    .detail_description_title > div{
+        width:35%;
+    }
+ }
+ @media (max-width:1112px){
+  .image_Description > p{
+    font-size: 60px;
+  }
+  .image_photo_presentation > img {
+    height:65%;
+  }
+  .Photo_presentation{
+    margin-top:-5%;
+  }
+  .aabbcc2 > p{
+    font-size:20px ;
+  }
+  .Photo_presentation_right{
+    margin-top:-7%;
+  }
+  .Photo_gallery_div{
+    margin-top:-2.5%;
+}
+.detail_description_title > div{
+    display: none;
+}
+ }
+ @media (max-width:1052px){
+    .image_photo_presentation > img {
+        height:60%;
+      }
+      .Photo_presentation{
+        margin-top:-8%;
+      }
+      .aabbcc2 > p{
+        font-size:20px ;
+      }
+      .Photo_presentation_right{
+        margin-top:-10%;
+      }
+      .aabbcc2_right > p{
+        max-width:90%;
+      }
+      .Photo_gallery_div{
+        margin-top:-3.5%;
+    }
+ }
+ @media (max-width:1021px){
+    .image_Description > p{
+      font-size: 60px;
+    }
+    .Video_div{
+        width:38vw;
+        margin-top:-3.5%;
+        margin-left:2%;
+    }
+    .Photo_gallery_div{
+        margin-top:-4%;
+    }
+    
+    
+    .gallery_image_div{
+        width:30vw;
+        height: 33vh;
+    }
+   }
+   @media (max-width:947px)
+   {
+    
+    .aabbcc2 > p{
+        font-size: 18px;
+    }
+    .Photo_presentation{
+        margin-top:-8%;
+      }
+      
+      .Photo_presentation_right{
+        margin-top:-11%;
+      }
+   }
+   @media (max-width:939px){
+    .image_Description > p{
+      font-size: 60px;
+    }
+    .Video_div{
+        width:42vw;
+    }
+    .aabbcc2 > p{
+        font-size: 17px;
+    }
+    .image_photo_presentation > img{
+height:55%;
+    }
+    .Photo_presentation{
+        margin-top:-10%;
+      }
+      
+      .Photo_presentation_right{
+        margin-top:-14%;
+      }
+      .Photo_gallery_div{
+        margin-top:-6%;
+    }
+    .gallery_image_div{
+        width:30vw;
+        height: 28vh;
+    }
+   }
+   @media (max-width:867px){
+    .gallery_container{
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .gallery_image_div{
+        width:50vw;
+        height: 40vh;
+    }
+   }
+   @media (max-width:852px){
+    .image_Description{
+        margin-left:-35%;
+    }
+    .image_Description > p{
+      font-size: 50px;
+    }
+    .Video_div{
+        width:46vw;
+    }
+    .video_data > p{
+        font-size:20px;
+    }
+    .Photo_presentation{
+        margin-top:-12%;
+      }
+      .aabbcc2 > p{
+        margin-left:15%;
+      }
+      .aabbcc2_right{
+        width:110%;
+      }
+      .aabbcc2_right > p{
+        margin-right:15%;
+        max-width:100%;
+      }
+      .Photo_presentation_right{
+        margin-top:-16%;
+      }
+      .Photo_gallery_div{
+        margin-top:-7%;
+    }
+    .gallery_image_div{
+        width:60vw;
+        height: 40vh;
+    }
+    
+   }

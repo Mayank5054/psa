@@ -13,6 +13,9 @@ import Home from './component/Home';
 import Contact from './component/Contact';
 import Projects from './component/Projects';
 import Rose from './component/Rose';
+import HomeMobile from './component/Mobile/HomeMobile';
+import NavigationMobile from './component/Mobile/NavigationMobile';
+import MobileProjects from './component/Mobile/MobileProjects';
 function domit() {
   var position = document.getElementById("slider_movable");
   console.log(position);
@@ -26,16 +29,31 @@ function App() {
   return (
     <>
       <div className='main_container'>
-        <Navigation></Navigation>
+       
         <AnimatePresence mode='wait'>
-          <Routes key={location.pathname} location={location}>
+          
+            {
+              window.innerWidth<=805 ?
+              <>
+              <NavigationMobile></NavigationMobile>
+              <Routes key={location.pathname} location={location}>
+              <Route index path="/" element={<HomeMobile></HomeMobile>}></Route>
+              <Route exact path="/projects" element={<MobileProjects></MobileProjects>}></Route>
+              </Routes>
+              </>
+              :
+              <>
+              <Navigation></Navigation>
+              <Routes key={location.pathname} location={location}>
             <Route index path="/" element={<Home></Home>}></Route>
-            <Route path="/about" element={<About></About>}></Route>
-            <Route path="/project" element={<Projects></Projects>}></Route>
-            <Route path="/project/rose" element={<Rose></Rose>}></Route>
-            <Route path="/service" element={<About></About>}></Route>
-            <Route path="/contact" element={<Contact></Contact>}></Route>
-          </Routes>
+            <Route exact path="/about" element={<About></About>}></Route>
+            <Route exact path="/project" element={<Projects></Projects>}></Route>
+            <Route exact path="/project/rose" element={<Rose></Rose>}></Route>
+            <Route exact path="/service" element={<About></About>}></Route>
+            <Route exact path="/contact" element={<Contact></Contact>}></Route>
+            </Routes>
+              </>
+            }
         </AnimatePresence>
         
       </div>

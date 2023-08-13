@@ -1,0 +1,156 @@
+.title_mobile_projects{
+    height:15vh;
+    width:100vw;
+    background:url("../../images/im04.png");
+    background-position: 0% 50%;
+    background-size: cover;
+    position: relative;
+}
+.wrapper_mobile_title_projects{
+    height:100%;
+    width:100%;
+    background: linear-gradient(to bottom,#EFBF3945  ,#763A1245);
+    position: absolute;
+    top:0%;
+}
+.content_wrapper_mobile{
+    height:100%;
+    width:100%;
+    /* background: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects_title_mobile{
+    height:100%;
+    width:70%;
+    /* background:red; */
+    display: flex;
+    align-items: center;
+}
+.projects_title_mobile > p{
+    
+    font-size:32px;
+    font-family: "josefin_bold";
+    color:var(--primary-color);
+    padding-left:8%;
+}
+.count_projects_title{
+    height:100%;
+    width:30%;
+    /* background:yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.count_projects_title > p{
+    font-size:18px;
+    margin:0%;
+    font-family: "josefin_light";
+    color:white;
+}
+.count_projects_title  .p_data{
+    margin-top:-2%;
+    font-size:25px;
+    padding-bottom:10px;
+    margin-top: 5%;
+}
+.count_projects_title .p_data > b{
+    color:white;
+}
+.count_projects_title .p_init{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+#bcdf{
+    color:var(--primary-color);
+}
+.house_cards_mobile{
+    height:auto;
+    width:100%;
+    /* display: grid;
+    grid-template-columns: auto auto;
+    /* grid-template-rows: 30% 30%; */
+    /* background:red; */ 
+}
+
+.project_mobile_cards{
+    margin-top:10%;
+    min-height:35vh;
+    width:100%;
+    /* display: grid;
+    grid-template-columns: auto auto; */
+    /* background:red; */
+}
+.project_mobile_cards_container{
+    min-height:35vh;
+    max-height:auto;
+    width:100%;
+    display: grid;
+    grid-template-rows: auto;
+    /* background:blue; */
+}
+.house1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:40vh;
+    max-height:auto;
+    margin-top:5%;
+    margin-bottom: 5%;
+    /* width:80%; */
+    
+}
+.house_data1{
+    height:100%;
+    width:75%;
+    background:red;
+    border-radius: 5px;
+    position:relative;
+    overflow: hidden;
+    background:url("../../images/Rectangle\ 52.png");
+   
+    /* background-size: cover; */
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.InnerProjectDiv{
+    height:140%;
+    width:100%;
+    overflow: hidden;
+    background:linear-gradient(to bottom,transparent,#000000cc);
+    position:absolute;
+    top:0%;
+    border-radius: inherit;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    /* justify-content: center; */
+    flex-direction:column;
+    /* transition: 1s; */
+}
+
+.InnerProjectDiv:hover{
+    width:100%;
+}
+.InnerProjectDiv > p{
+    font-size:15px;
+    color:White;
+    padding:0px;
+    margin:0px;
+    margin-top:1%;
+    letter-spacing: 1px;
+    /* background:red; */
+}
+.InnerProjectDiv > p:nth-child(1){
+    font-size:30px;
+}
+.InnerProjectDiv > a{
+    /* font-size:20px; */
+    height:10%;
+    padding-top:3%;
+    width:20%;
+}

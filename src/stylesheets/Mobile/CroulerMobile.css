@@ -1,0 +1,61 @@
+.crouler_div_mobile{
+    height:50vh;
+    width:100vw;
+    background:red;
+}
+.crouler_image_mobile{
+    height:100%;
+    width:100%;
+    background:blue;
+    position:relative;
+}
+.crouler_image_img{
+    height:100%;
+    width:100%;
+    padding:0%;
+    margin:0%;
+    
+}
+.wrapper{
+    height:100%;
+    width:100%;
+    background:linear-gradient(to right,#000000C5 35%,transparent);
+    position:absolute;
+    align-items: center;
+    justify-content: flex-start;
+}
+.content_to_be{
+    height:50%;
+    min-width:60%;
+    max-width:75%;
+    /* background:red; */
+}
+.content_wrapper{
+    height:100%;
+    width:100%;
+    
+    /* background:yellow; */
+}
+.content_wrapper > p:nth-child(1) {
+font-size: 30px;
+font-family: "josefin_bold";
+color:var(--primary-color);
+padding-left:15%;
+letter-spacing: 1px;
+word-spacing: 2px;
+}
+.content_wrapper > p:nth-child(2){
+    font-size: 15px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+color:white;
+font-family: "josefin_light";
+padding-left: 16%;
+margin-top:-3%;
+}
+
+.changeImage{
+    animation-name: changeContent;
+    animation-duration:2s;
+    animation-timing-function: linear;
+}

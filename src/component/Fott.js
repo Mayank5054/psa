@@ -20,7 +20,7 @@ function Fott(){
          >
         <motion.div className="footer_div1"
         viewport={{ once: true }}
-                 initial={{y:"402%"}}
+                 initial={{y:"20%"}}
                  whileInView={{
                      y: 0,
                      transition: {
