@@ -16,6 +16,7 @@
 @import url("./stylesheets/Mobile/ServiceMobile.css");
 @import url("./stylesheets/Mobile/FooterMobile.css");
 @import url("./stylesheets/Mobile/ProjectsMobile.css");
+@import url("./stylesheets/Mobile/RoseMobile.css");
 :root{
   --primary-color:#EFBF39;
   --primary-color2:#763A12;

@@ -16,6 +16,7 @@ import Rose from './component/Rose';
 import HomeMobile from './component/Mobile/HomeMobile';
 import NavigationMobile from './component/Mobile/NavigationMobile';
 import MobileProjects from './component/Mobile/MobileProjects';
+import MobileRose from './component/Mobile/MobileRose';
 function domit() {
   var position = document.getElementById("slider_movable");
   console.log(position);
@@ -39,6 +40,7 @@ function App() {
               <Routes key={location.pathname} location={location}>
               <Route index path="/" element={<HomeMobile></HomeMobile>}></Route>
               <Route exact path="/projects" element={<MobileProjects></MobileProjects>}></Route>
+              <Route exact path="/projects/rose" element={<MobileRose></MobileRose>}></Route>
               </Routes>
               </>
               :

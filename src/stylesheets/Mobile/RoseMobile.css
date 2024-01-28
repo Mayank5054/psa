@@ -1,0 +1,41 @@
+.roseBasicDivMobile{
+    height:auto;
+    width:100%;
+}
+.houseNameMobile{
+    height:15vh;
+    width:100%;
+    /* background:green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    /* top:15%; */
+}
+.houseSideMobile{
+    height:80%;
+    width:30%;
+    /* background:red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--primary-color);
+    border-radius: 3px;
+    /* background:var(--primary-color); */
+    /* border:3px solid white; */
+}
+.sideImage1{
+    position:relative;
+}
+.houseSideMobile > p{
+    font-size: 35px;
+    padding:0px;
+    margin:0px;
+    /* width:60%; */
+    text-align: center;
+ color: var(--primary-color);
+ font-family: "josefin_bold";
+ text-shadow: 2px 0px 1px white;
+ /* color:white; */
+
+}
